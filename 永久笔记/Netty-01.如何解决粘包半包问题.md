@@ -9,7 +9,7 @@ createDate: 2023-04-14
 
 # 思维导图
 
-![Untitled](xmind.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/xmind.png)
 
 # 何为粘包 / 半包？
 
@@ -17,7 +17,7 @@ createDate: 2023-04-14
 
 不一定，对方可能一次就把两条消息接收完了，即 ABCDEF；也可能分成了好多次，比如 AB、CD 和 EF。
 
-![Untitled](what_is_sticky_half_bag.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/what_is_sticky_half_bag.png)
 
 对方一次性接收了多条消息这种现象，我们就称之为**粘包现象**。
 
@@ -31,7 +31,7 @@ createDate: 2023-04-14
 
 这就好比寄快递的时候一样，不可能你寄一个快递就给你派送一样，而是先放到仓库里，等够一车了再统一装车拉走。
 
-![Untitled](the_reason_of_sticky_bag.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/the_reason_of_sticky_bag.png)
 
 但是，**对方接收到的消息就是一个粘包**，无法有效区分出来到底是几条消息。
 
@@ -50,11 +50,11 @@ createDate: 2023-04-14
 
 这就好比你发的快递太多了，一车拉不完，要分成好几车拉走一样（似乎不太常见☺）。
 
-![Untitled](the_reason_of_half_bag.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/the_reason_of_half_bag.png)
 
 还有一种情况，网络协议各层是有最大负载的，所以，对应到各种协议它们是有最大发送数据的限制的，这种可以发送的最大数据称作 MTU（Maximum Transmission Unit，最大传输单元）。
 
-![Untitled](mtu.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/mtu.png)
 
 所以一次发送的数据如果**超过了协议的 MTU**，也要**进行拆分发送**，也会**形成半包现象**。
 
@@ -92,7 +92,7 @@ TCP 协议本身像水流一样，源源不断，完全不知道消息的边界�
 
 那么，就找最长的那条消息，这里是 ABC，那就以 3 为固定长度，不足三位的补足三位。
 
-![Untitled](fixed_length_method.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/fixed_length_method.png)
 
 所以，这种方式最大的缺点就是**浪费空间**，所以不推荐。
 
@@ -102,7 +102,7 @@ TCP 协议本身像水流一样，源源不断，完全不知道消息的边界�
 
 那么，就在消息的边界处加一个 \n 作为分割符，这样接收方拿到消息之后使用 \n 去分割消息即可。
 
-![Untitled](delemiter_method.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/delemiter_method.png)
 
 但是，这种方式的缺点是一是**分割符本身作为传输内容时要转义**，二是**要扫描消息的内容才能确定消息的边界在哪里**，所以也不是特别推荐。
 
@@ -114,7 +114,7 @@ TCP 协议本身像水流一样，源源不断，完全不知道消息的边界�
 
 那么，就在消息前面分别加上长度一起传输，后面再跟上内容，这样即使三条消息一起传输也可以分得清清楚楚。
 
-![Untitled](length_field_method.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/length_field_method.png)
 
 这种方式的缺点是**需要预先知道消息的最大长度**，但是跟这个缺点相比，优点太明显了，所以是我们推荐的方式。
 
@@ -176,7 +176,7 @@ public final class EchoServer {
 
 启动服务器，使用 XSHELL 连接到服务器，并发送一串数字 “12345”，看看控制台的日志：
 
-![Untitled](console.png)
+![Untitled](../attachments/Netty-01.如何解决粘包半包问题/console.png)
 
 可以看到，我们收到的消息为 “12345…”，后面的两个点一个是回车符 “\r”，一个是换行符 “\n”，然后看发送的消息，一个是 “123”，一个是 “45.”，还有一个点，不够三位，所以不会发送。
 
@@ -188,5 +188,5 @@ public final class EchoServer {
 是不是超级简单呢？编解码器可以说是 Netty 的一大灵魂所在，也是 Netty 好用的地方。
 
 # 相关性
-- [[Netty-02.Netty的常见编码方式]]
+- [Netty-02.Netty的常见编码方式](Netty-02.Netty的常见编码方式)
 	在解决粘包/半包问题后，二次编解码（将字节数组转化为对象）
