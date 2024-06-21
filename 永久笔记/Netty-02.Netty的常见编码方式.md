@@ -10,7 +10,7 @@ createDate: 2023-04-14
 
 ## 思维导图
 
-![Netty-02.Netty的常见编码方式思维导图.png](../attachments/Netty-02.Netty的常见编码方式/思维导图.png)
+![Netty-02.Netty的常见编码方式思维导图.png](https://gitee.com/littlefxc/records/raw/dev/attachments/Netty-02.Netty%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F/思维导图.png)
 
 ## 前言
 
@@ -35,7 +35,7 @@ createDate: 2023-04-14
 1. 运用一次编解码将 “12345\r\n”的字节数组拆分成“123” 和 “45\r”的字节数组；
 2. 运用二次编解码将 “123” 和 “45\r”转换成 Java 的 String 类型的对象；
 3. 打印上面的 String 对象；
-    ![一次编解码和二次编解码_1.png](../attachments/Netty-02.Netty的常见编码方式/一次编解码和二次编解码_1.png)
+    ![一次编解码和二次编解码_1.png](https://gitee.com/littlefxc/records/raw/dev/attachments/Netty-02.Netty%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F/一次编解码和二次编解码_1.png)
 
 所以，**一次编解码和二次编解码可以合并吗？**
 
@@ -53,7 +53,7 @@ createDate: 2023-04-14
 - 二次编解码：MessageToMessageEncoder/MessageToMessageDecoder
 
 正常来说，继承自 `MessageToByteEncoder` 或者 `ByteToMessageDecoder` 类的就是一次编解码，继承自 `MessageToMessageEncoder` 或者 `MessageToMessageDecoder` 类的就是二次编解码，其实，也很好理解，服务端接收请求的过程也是先拿到字节数组（在 Netty 中可以理解为 ByteBuf），然后通过 ByteToMessageDecoder 转换成协议格式的字节数组，再把协议格式的字节数组通过 MessageToMessageDecoder 转换成 Java 对象。
-![byteToMessageDecoder_MessageToMessageDecoder.png](../attachments/Netty-02.Netty的常见编码方式/byteToMessageDecoder_MessageToMessageDecoder.png)]
+![byteToMessageDecoder_MessageToMessageDecoder.png](https://gitee.com/littlefxc/records/raw/dev/attachments/Netty-02.Netty%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F/byteToMessageDecoder_MessageToMessageDecoder.png)]
 
 > 正如前文所说，凡事都有特例，比如 MarshallingEncoder，它继承自 MessageToByteEncoder，但是它把二次编码的工作也给干了。从 ByteToMessageDecoder 的名称也可以知道，字节数组直接转成 Java 对象也没有毛病，而且，MessageToMessageDecoder 也可以表示 Java 对象 A 转换成 Java 对象 B。不过，对于我们自己来写编解码，最好还是遵循分层的思想来实现。
 
@@ -66,7 +66,7 @@ createDate: 2023-04-14
 那么，Netty 中支持哪些二次编解码方式呢？
 
 打开 Netty 工程，找到 `netty-codec` 这个工程，展开目录：
-![](../attachments/Netty-02.Netty的常见编码方式/netty-codec_dirtonary.png)
+![](https://gitee.com/littlefxc/records/raw/dev/attachments/Netty-02.Netty%E7%9A%84%E5%B8%B8%E8%A7%81%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F/netty-codec_dirtonary.png)
 > 不要打开了 `netty-codec-xxx` 工程了，那些是对各种协议的支持，编解码的范围比较广，Netty 也是因为有了这么多协议、序列化方式的支持才变得这么好用。
 
 可以看到，这个目录下有 base64、bytes、json、protobuf 等等，让我们一个一个来看一下：
