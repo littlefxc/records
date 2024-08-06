@@ -1,4 +1,3 @@
-
 ---
 title: IO的五种模型
 tags:
@@ -10,7 +9,7 @@ createDate: 2023-11-28
 
 ## Channel
 
-![[Channel是什么.png]]
+![Channel是什么.png (1030×425) (gitee.com)](https://gitee.com/littlefxc/records/raw/dev/attachments/Netty-04.Java%20NIO%E7%9A%84%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/Channel%E6%98%AF%E4%BB%80%E4%B9%88.png)
 
 Channel 是一种文件的链接，它代表的是到实体的开放连接，这个实体可以是硬件设备、文件、网络套接字或者可执行文件 IO 操作（比如读、写）的程序组件。
 
@@ -71,7 +70,7 @@ Buffer 是存放数据的容器。
 - capacity：Buffer 的容量，即能够容纳的数量
 - limit：表示最大可写或者最大可读的数据
 - position：表示下一次可使用的位置，针对读模式表示下一个可读的位置，针对写模式表示下一个可写的位置
-![[Buffer的结构.png]]
+![Buffer的结构.png (416×276) (gitee.com)](https://gitee.com/littlefxc/records/raw/dev/attachments/Netty-04.Java%20NIO%E7%9A%84%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/Buffer%E7%9A%84%E7%BB%93%E6%9E%84.png)
 
 几个重要的方法：
 - 分配一个 Buffer：allocate ()
@@ -114,7 +113,7 @@ public class FileChannelTest {
 
 Selector 是一个（SelectableChannel的）多路复用器
 
-![[Selector和Channel的关系.png]]
+![Selector和Channel的关系.png (395×221) (gitee.com)](https://gitee.com/littlefxc/records/raw/dev/attachments/Netty-04.Java%20NIO%E7%9A%84%E6%A0%B8%E5%BF%83%E7%BB%84%E4%BB%B6/Selector%E5%92%8CChannel%E7%9A%84%E5%85%B3%E7%B3%BB.png)
 
 Selector 和 Channel 是什么关系？Selector 和 Channel 是一对多关系，一个Selector 可以为多个 Channel 服务，监听它们准备好的事件。
 

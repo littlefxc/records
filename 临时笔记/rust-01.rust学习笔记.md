@@ -37,7 +37,7 @@ fn main() {
 
 **当 `s1` 被赋予 `s2` 后，Rust 认为 `s1` 不再有效，因此也无需在 `s1` 离开作用域后 `drop` 任何东西，这就是把所有权从 `s1` 转移给了 `s2`，`s1` 在被赋予 `s2` 后就马上失效了**。
 
-![](../attachments/rust01/rust-01.所有权移动.png)
+![rust-01.所有权移动.png (1440×1161) (gitee.com)](https://gitee.com/littlefxc/records/raw/5b5452e63078f94ef962286695f3f57f53f3d4cc/attachments/rust01/rust-01.%E6%89%80%E6%9C%89%E6%9D%83%E7%A7%BB%E5%8A%A8.png)
 
 ### 拷贝
 
@@ -121,3 +121,19 @@ fn main() {
 
 - **闭包中最后一行表达式返回的值，就是闭包执行后的返回值**，因此 `action()` 调用返回了 `intensity` 的值 `10`
 - `let action = ||...` 只是把闭包赋值给变量 `action`，并不是把闭包执行后的结果赋值给 `action`，因此这里 `action` 就相当于闭包函数，可以跟函数一样进行调用：`action()`
+
+## 迭代器
+
+#### into_iter、iter、iter_mut
+
+- `into_iter` 会夺走所有权
+- `iter` 是借用
+- `iter_mut` 是可变借用
+
+其实如果以后见多识广了，你会发现这种问题一眼就能看穿，`into_` 之类的，都是拿走所有权，`_mut` 之类的都是可变借用，剩下的就是不可变借用。
+
+#### Iterator 和 IntoIterator 的区别
+
+这两个其实还蛮容易搞混的，但我们只需要记住，`Iterator` 就是迭代器特征，只有实现了它才能称为迭代器，才能调用 `next`。
+
+而 `IntoIterator` 强调的是某一个类型如果实现了该特征，它可以通过 `into_iter`，`iter` 等方法变成一个迭代器。
