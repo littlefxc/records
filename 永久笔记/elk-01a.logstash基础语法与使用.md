@@ -1,11 +1,10 @@
 
 ---
 title: logstash基础语法与使用
-tags:
+status: Done
+Tags:
   - elk
   - logstash
-status: Done
-createDate: 2023-04-14
 ---
 
 ```sh

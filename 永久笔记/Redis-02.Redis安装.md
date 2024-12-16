@@ -1,10 +1,8 @@
 ---
 title: Redis安装
-tags:
-  - redis
 status: Done
-createDate: 2020-09-22
-updateDate: 2020-09-22
+Tags:
+  - redis
 ---
 
 ### **下载**

@@ -1,10 +1,8 @@
 ---
 title: Redis6.0多线程模型总结
-tags:
-  - redis
 status: Done
-updateDate: 2024-06-06
-createDate: 2024-06-06
+Tags:
+  - redis
 ---
 
 

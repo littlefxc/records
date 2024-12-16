@@ -1,10 +1,9 @@
 ---
 title: Spring Boot 使用 MDC 进行日志追踪
-tags:
+status: Done
+Tags:
   - MDC
   - 日志追踪
-status: Done
-createDate: 2023-04-14
 ---
 
 > 转载自 [Springboot使用MDC进行日志追踪_springboot日志追踪_繁华尽头满是殇的博客-CSDN博客](https://blog.csdn.net/qq_48922459/article/details/129001157)

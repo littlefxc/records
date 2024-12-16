@@ -1,8 +1,7 @@
 ---
-tags:
-  - excel
 status: Done
-createDate: 2023-04-14
+Tags:
+  - excel
 ---
 
 # Excel合并单元格填充序列的方法

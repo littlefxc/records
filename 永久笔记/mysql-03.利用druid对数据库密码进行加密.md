@@ -1,10 +1,9 @@
 
 ---
 title: 利用druid对数据库密码进行加密
-tags:
-  - druid
 status: Done
-createDate: 2022-03-10
+Tags:
+  - druid
 ---
 
 ---

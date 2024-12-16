@@ -2,10 +2,9 @@
 ---
 title: JVM 分代收集理论
 status: Done
-tags:
+Tags:
   - Java
   - JVM
-createDate: 2022-01-20T11:58:09+08:00
 ---
 
 ![image-20220120124350284](https://img-blog.csdnimg.cn/img_convert/689998561a59a84497ef36b172e31ec7.png)

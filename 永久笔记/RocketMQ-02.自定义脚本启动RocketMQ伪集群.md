@@ -1,9 +1,8 @@
 ---
 title: 自定义脚本启动RocketMQ伪集群
-tags:
-  - RocketMQ
 status: Done
-createDate: 2023-04-14
+Tags:
+  - RocketMQ
 ---
 
 ---

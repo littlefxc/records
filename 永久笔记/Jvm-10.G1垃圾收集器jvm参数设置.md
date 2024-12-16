@@ -2,10 +2,9 @@
 ---
 title: G1垃圾收集器jvm参数设置
 status: Done
-tags:
+Tags:
   - Java
   - JVM
-createDate: 2023-06-17T11:58:09+08:00
 ---
 
 ---

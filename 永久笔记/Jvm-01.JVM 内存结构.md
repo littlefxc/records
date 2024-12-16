@@ -1,11 +1,10 @@
 
 ---
 title: JVM 内存结构
-tags:
+status: Done
+Tags:
   - Java
   - JVM
-status: Done
-createDate: 2023-04-14
 ---
 
 # JVM 内存结构

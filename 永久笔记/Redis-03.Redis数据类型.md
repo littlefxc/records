@@ -1,10 +1,8 @@
 ---
 title: Redis数据类型
-tags:
-  - redis
 status: Done
-createDate: 2020/09/22
-updateDate: 2020/09/22
+Tags:
+  - redis
 ---
 
 # **Redis的数据类型 - string**

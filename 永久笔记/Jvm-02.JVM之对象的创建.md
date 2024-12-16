@@ -1,10 +1,9 @@
 ---
 title: JVM之对象的创建
-tags:
+status: Done
+Tags:
   - Java
   - JVM
-status: Done
-createDate: 2023-04-14
 ---
 # JVM之对象的创建
 

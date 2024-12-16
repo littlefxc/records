@@ -2,10 +2,9 @@
 ---
 title: GC日志解读
 status: Done
-tags:
+Tags:
   - Java
   - JVM
-createDate: 2023-08-31
 ---
 
 ---

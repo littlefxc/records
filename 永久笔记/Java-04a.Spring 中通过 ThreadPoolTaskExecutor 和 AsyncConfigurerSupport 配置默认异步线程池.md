@@ -1,3 +1,7 @@
+---
+modified: 2024-11-25 09:00:01
+created: 2024-01-29 18:25:39
+---
 
 ---
 title: Spring 中如何配置默认异步线程池
@@ -5,7 +9,6 @@ tags:
   - spring boot
   - 异步
 status: doing
-createDate: 2024-01-29
 ---
 
 [[Java-04b.Spring 中通过 TaskDecorator 配置默认异步线程池]]

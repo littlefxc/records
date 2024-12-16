@@ -1,10 +1,9 @@
 ---
 title: 密码
-tags:
+status: Done
+Tags:
   - JVM
   - Java
-status: Doing
-createDate: 2024-07-04
 ---
 
 ## 前置

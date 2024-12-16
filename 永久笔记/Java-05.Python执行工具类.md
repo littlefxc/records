@@ -1,10 +1,9 @@
 ---
 title: Python执行工具类
-tags:
+status: Done
+Tags:
   - Python
   - Java
-status: Done
-createDate: 2023-04-14
 ---
 ```java
 import com.google.common.collect.Lists;

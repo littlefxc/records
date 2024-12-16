@@ -1,9 +1,8 @@
 ---
 title: DDD-领域对象的构造
-tags:
-  - DDD
 status: Done
-createDate: 2023-05-15
+Tags:
+  - DDD
 ---
 
 ## ０ 前言

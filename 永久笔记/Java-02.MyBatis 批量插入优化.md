@@ -1,11 +1,10 @@
 ---
 title: MyBatis 批量插入优化
-tags:
+status: Done
+Tags:
   - Java
   - MyBatis
   - 批处理
-status: Done
-createDate: 2023-04-14
 ---
 # MyBatis 批量插入优化
 

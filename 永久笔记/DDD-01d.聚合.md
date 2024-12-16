@@ -1,9 +1,8 @@
 ---
 title: DDD-聚合
-tags:
-  - DDD
 status: Done
-createDate: 2023-05-15
+Tags:
+  - DDD
 ---
 
 转载自 [聊一聊DDD中聚合的概念](https://blog.csdn.net/u012179540/article/details/115152804)

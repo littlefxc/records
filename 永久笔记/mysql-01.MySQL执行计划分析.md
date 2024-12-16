@@ -1,9 +1,8 @@
 ---
 title: MySQL执行计划分析
-tags:
-  - MySQL
 status: Done
-createDate: 2023-04-14
+Tags:
+  - MySQL
 ---
 
 > 转载自https://gitee.com/SnailClimb/JavaGuide/blob/main/docs/database/mysql/mysql-query-execution-plan.md

@@ -1,10 +1,9 @@
 ---
 title: logstash同步数据库配置
-tags:
+status: Done
+Tags:
   - elk
   - logstash
-status: Done
-createDate: 2023-04-14
 ---
 
 [上一篇文档](https://blog.csdn.net/Little_fxc/article/details/112644481)

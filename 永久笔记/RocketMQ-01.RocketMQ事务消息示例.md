@@ -1,9 +1,8 @@
 ---
 title: RocketMQ事务消息示例
-tags:
-  - RocketMQ
 status: Done
-createDate: 2023-04-14
+Tags:
+  - RocketMQ
 ---
 
 ---

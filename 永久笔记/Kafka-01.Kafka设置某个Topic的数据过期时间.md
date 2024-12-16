@@ -1,9 +1,8 @@
 ---
 title: Kafka设置某个Topic的数据过期时间
-tags:
-  - Kafka
 status: Done
-createDate: 2022-04-02
+Tags:
+  - Kafka
 ---
 
 ---

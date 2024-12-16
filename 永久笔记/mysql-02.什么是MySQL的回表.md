@@ -1,10 +1,9 @@
 
 ---
 title: 什么是MySQL的回表？
-tags:
-  - MySQL
 status: Done
-createDate: 2022-03-10
+Tags:
+  - MySQL
 ---
 
 ---

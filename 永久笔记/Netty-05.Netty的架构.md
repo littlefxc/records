@@ -1,10 +1,9 @@
 ---
 title: Netty的架构
-tags:
+status: Done
+Tags:
   - netty
   - netty基础知识
-status: Done
-createDate: 2023-12-11
 ---
 
 ## 架构设计

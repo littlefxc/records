@@ -1,9 +1,8 @@
 ---
 title: 代码命名规范
-tags:
+status: Done
+Tags:
   - Java
-status: Doing
-createDate: 2023-04-14
 ---
 
 转载自[新来了个同事，代码命名规范是真优雅呀！代码如诗！！ (qq.com)](https://mp.weixin.qq.com/s/CuJO_qZHtRsQ2ceIVy5M5w)

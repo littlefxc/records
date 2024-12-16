@@ -2,9 +2,8 @@
 
 ---
 title: MySQL事务相关
-tags:
+Tags:
   - mysql
-createDate: 2021-09-14 14:34:47
 ---
 
 # 1. 概述

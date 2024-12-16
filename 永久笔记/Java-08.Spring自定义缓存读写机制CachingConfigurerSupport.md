@@ -1,10 +1,9 @@
 ---
 title: Spring自定义缓存读写机制CachingConfigurerSupport
 status: Done
-tags:
+Tags:
   - Java
   - Spring
-createDate: 2023-05-22
 ---
 
 ---

@@ -1,10 +1,9 @@
 ---
 title: logstash将mysql经纬度数据转为geo_point
-tags:
+status: Done
+Tags:
   - elk
   - logstash
-status: Done
-createDate: 2023-04-14
 ---
 
 ## 前言

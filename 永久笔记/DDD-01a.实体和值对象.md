@@ -1,9 +1,8 @@
 ---
 title: DDD-实体和值对象
-tags:
-  - DDD
 status: Done
-createDate: 2023-05-15
+Tags:
+  - DDD
 ---
 
 ## ０ 前言

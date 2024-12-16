@@ -1,10 +1,9 @@
 ---
 title: Logstash自定义模板配置中文分词
-tags:
+status: Done
+Tags:
   - elk
   - logstash
-status: Done
-createDate: 2023-04-14
 ---
 
 # 前言

@@ -1,10 +1,9 @@
 ---
 title: JVM类加载过程
 status: Done
-tags:
+Tags:
   - Java
   - JVM
-createDate: 2022-01-20T11:58:09+08:00
 ---
 
 - [[JVM-08.JVM类加载过程]]

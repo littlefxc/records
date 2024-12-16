@@ -2,10 +2,9 @@
 ---
 title: JVM垃圾收集器
 status: Done
-tags:
+Tags:
   - Java
   - JVM
-createDate: 2022-01-20T11:58:09+08:00
 ---
 
 ## 引言

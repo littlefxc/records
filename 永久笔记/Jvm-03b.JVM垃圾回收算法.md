@@ -2,10 +2,9 @@
 ---
 title: JVM 垃圾回收算法
 status: Done
-tags:
+Tags:
   - Java
   - JVM
-createDate: 2023-05-16
 ---
 
 ## 0 概述

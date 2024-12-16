@@ -2,7 +2,6 @@
 ---
 title: SQL语句在MySQL中的执行流程
 draft: false
-createDate: 2022-02-25T15:28:58+08:00
 ---
 
 ## 1 基本架构概述

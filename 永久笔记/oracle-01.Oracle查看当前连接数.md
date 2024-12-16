@@ -1,9 +1,8 @@
 ---
 title: Oracle查看当前连接数
-tags:
-  - Oracle
 status: Done
-createDate: 2023-04-14
+Tags:
+  - Oracle
 ---
 
 **1、查看当前的数据库连接数**

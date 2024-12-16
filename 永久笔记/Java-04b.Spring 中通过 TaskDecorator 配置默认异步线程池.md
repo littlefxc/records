@@ -1,11 +1,10 @@
 
 ---
 title: Spring 中通过 TaskDecorator 配置默认异步线程池
-tags:
+status: doing
+Tags:
   - spring boot
   - 异步
-status: doing
-createDate: 2024-01-29
 ---
 
 [[Java-04a.Spring 中通过 ThreadPoolTaskExecutor 和 AsyncConfigurerSupport 配置默认异步线程池]]

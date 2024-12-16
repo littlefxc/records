@@ -1,10 +1,9 @@
 ---
 title: 线程池如何传递ThreadLocal
-tags:
+status: Done
+Tags:
   - Java
   - ThreadLocal
-status: Done
-createDate: 2023-04-14
 ---
 
 ## 前言

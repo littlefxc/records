@@ -1,9 +1,8 @@
 ---
 title: DDD-聚合
-tags:
-  - DDD
 status: Done
-createDate: 2024-01-05
+Tags:
+  - DDD
 ---
 
 ## 什么是聚合
