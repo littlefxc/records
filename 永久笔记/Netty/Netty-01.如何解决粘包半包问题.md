@@ -4,6 +4,8 @@ status: Done
 Tags:
   - netty
   - netty基础知识
+modified: 2024-12-24 09:51:29
+created: 2022-09-20 15:01:14
 ---
 
 # 思维导图
@@ -187,5 +189,5 @@ public final class EchoServer {
 是不是超级简单呢？编解码器可以说是 Netty 的一大灵魂所在，也是 Netty 好用的地方。
 
 # 相关性
-- [Netty-02.Netty的常见编码方式](Netty-02.Netty的常见编码方式)
+- [Netty-02.Netty的常见编码方式](Netty-02.Netty的常见编码方式.md)
 	在解决粘包/半包问题后，二次编解码（将字节数组转化为对象）

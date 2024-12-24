@@ -4,12 +4,14 @@ status: Done
 Tags:
   - JVM
   - Java
+modified: 2024-12-24 09:57:37
+created: 2024-07-04 09:58:16
 ---
 
 ## 前置
 
-- [JVM-08.JVM类加载过程](../永久笔记/JVM-08.JVM类加载过程.md)
-- [JVM-08a.类加载器](../永久笔记/JVM-08a.类加载器.md)
+- [JVM-08.JVM类加载过程](JVM-08.JVM类加载过程.md)
+- [JVM-08a.类加载器](JVM-08a.类加载器.md)
 
 ## Java 类加载过程回顾及目标
 
